@@ -1,3 +1,14 @@
+#uses 
+ repo ko opne kr or vars.py me apna api or api hsh dal or bot token the 
+ H per deployed krde ho jayega 
+
+
+
+
+
+
+
+
 <p align="center">
   <h1 align="center">TXT-LEECH-BOT</h1>
 </p>
