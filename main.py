@@ -212,8 +212,8 @@ async def upload(bot: Client, m: Message):
                 cmd = f'yt-dlp -o "{name}.mp4" "{url}"' if "jw-prod" in url else f'yt-dlp -f "{ytf}" "{url}" -o "{name}.mp4"'
 
                 try:
-                    cc = f'**[📽️] Vid_ID:** {str(count).zfill(3)}. {name1}{MR}.mkv\n**𝔹ᴀᴛᴄʜ** » **{raw_text0}**'
-                    cc1 = f'**[📁] Pdf_ID:** {str(count).zfill(3)}. {name1}{MR}.pdf \n**𝔹ᴀᴛᴄʜ** » **{raw_text0}**'
+                    cc = f'** index :** {str(count).zfill(3)}. Download By {name1}{MR}.mp4\n\n\n\n**Batch**  ** {raw_text0}**'
+                    cc1 = f'** index :** {str(count).zfill(3)}. Download By {name1}{MR}.pdf \n\n\n\n**Batch**  ** {raw_text0}**'
 
                     if "drive" in url:
                         try:
@@ -225,7 +225,7 @@ async def upload(bot: Client, m: Message):
                         except FloodWait as e:
                             await m.reply_text(str(e))
                             time.sleep(e.x)
-                            continue
+                            continu
                     
                     elif ".pdf" in url:
                         try:
@@ -240,7 +240,7 @@ async def upload(bot: Client, m: Message):
                             time.sleep(e.x)
                             continue
                     else:
-                        Show = f"**⥥ 🄳🄾🅆🄽🄻🄾🄰🄳🄸🄽🄶⬇️⬇️... »**\n\n**📝Name »** `{name}\n❄Quality » {raw_text2}`\n\n**🔗URL »** `{url}`"
+                        Show = f"**⥥ Download By Astronaut ... »**\n\n\n**📝Name »** `{name}\n❄Quality » {raw_text2}`\n\n**🔗URL »** `{url}`"
                         prog = await m.reply_text(Show)
                         res_file = await helper.download_video(url, cmd, name)
                         filename = res_file
@@ -256,7 +256,7 @@ async def upload(bot: Client, m: Message):
         except Exception as e:
             await m.reply_text(str(e))
             return
-        await m.reply_text("**𝔻ᴏɴᴇ 𝔹ᴏ𝕤𝕤😎**")
+        await m.reply_text("**Done ✅️**")
     except Exception as e:
         await m.reply_text(f"An error occurred: {str(e)}")
 
